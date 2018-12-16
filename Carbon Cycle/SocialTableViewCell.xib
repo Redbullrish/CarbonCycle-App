@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="243" id="KGk-i7-Jjw" customClass="SocialTableViewCell" customModule="Carbon_Cycle" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="441" height="243"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="441" height="242.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RwL-6E-ld8">
+                        <rect key="frame" x="8" y="8" width="425" height="226.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LlJ-TJ-6Ax">
+                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="1RE-t9-rUG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="Aem-pV-9wV"/>
+                                    <constraint firstAttribute="width" secondItem="LlJ-TJ-6Ax" secondAttribute="height" multiplier="1:1" id="PvE-jn-BBv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sq8-N2-Cd4">
+                                <rect key="frame" x="56" y="8" width="94" height="17"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 minutes ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxb-yo-RYU">
+                                <rect key="frame" x="56" y="33" width="86" height="11"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="11"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the greatest post ever on this app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wH-04-sSo">
+                                <rect key="frame" x="56" y="56" width="361" height="162.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sq8-N2-Cd4" firstAttribute="top" secondItem="RwL-6E-ld8" secondAttribute="top" constant="8" id="3FJ-78-HbQ"/>
+                            <constraint firstItem="wxb-yo-RYU" firstAttribute="leading" secondItem="LlJ-TJ-6Ax" secondAttribute="trailing" constant="8" id="4LO-dP-PJA"/>
+                            <constraint firstItem="LlJ-TJ-6Ax" firstAttribute="leading" secondItem="RwL-6E-ld8" secondAttribute="leading" constant="8" id="PoH-hH-fr5"/>
+                            <constraint firstItem="wxb-yo-RYU" firstAttribute="top" secondItem="sq8-N2-Cd4" secondAttribute="bottom" constant="8" id="TPW-Ip-1A7"/>
+                            <constraint firstItem="1wH-04-sSo" firstAttribute="leading" secondItem="LlJ-TJ-6Ax" secondAttribute="trailing" constant="8" id="XV6-ND-PQm"/>
+                            <constraint firstItem="LlJ-TJ-6Ax" firstAttribute="top" secondItem="RwL-6E-ld8" secondAttribute="top" constant="8" id="evE-0c-lrq"/>
+                            <constraint firstAttribute="bottom" secondItem="1wH-04-sSo" secondAttribute="bottom" constant="8" id="ik1-G7-L4f"/>
+                            <constraint firstItem="sq8-N2-Cd4" firstAttribute="leading" secondItem="LlJ-TJ-6Ax" secondAttribute="trailing" constant="8" symbolic="YES" id="ks0-h6-g1z"/>
+                            <constraint firstItem="1wH-04-sSo" firstAttribute="top" secondItem="LlJ-TJ-6Ax" secondAttribute="bottom" constant="8" id="oyA-Xl-v9l"/>
+                            <constraint firstAttribute="trailing" secondItem="1wH-04-sSo" secondAttribute="trailing" constant="8" id="tYr-3L-YXn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="windowFrameTextColor" catalog="System" colorSpace="catalog"/>
+                <constraints>
+                    <constraint firstItem="RwL-6E-ld8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="5n4-S2-JaX"/>
+                    <constraint firstAttribute="bottom" secondItem="RwL-6E-ld8" secondAttribute="bottom" constant="8" id="C7w-cF-FsY"/>
+                    <constraint firstItem="RwL-6E-ld8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="PxA-2k-a5I"/>
+                    <constraint firstAttribute="trailing" secondItem="RwL-6E-ld8" secondAttribute="trailing" constant="8" id="X2R-d0-biX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="149.59999999999999" y="137.18140929535232"/>
+        </tableViewCell>
+    </objects>
+</document>
